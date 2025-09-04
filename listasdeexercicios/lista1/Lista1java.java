@@ -6,7 +6,7 @@ public class Lista1java {
 
     //Nível 1: Entrada, Processamento e Saída
 
-public static void questao1() {
+    public static void questao1() {
 
     Scanner input = new Scanner(System.in);
 
