@@ -28,8 +28,8 @@ POO/
 
 ## ⚙️ Tecnologias Utilizadas
 
-**Linguagem:** Java
-**Paradigma:** Programação Orientada a Objetos
+- **Linguagem:** Java
+- **Paradigma:** Programação Orientada a Objetos
 
 ## 📝 Observações
 
