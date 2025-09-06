@@ -1,3 +1,12 @@
+/*
+    Aluna: Izadora Louyza Silva Figueiredo
+    Matrícula: 2024010176
+    Curso: Bacharelado em Tecnologia da Informação - BTI
+    Disciplina: Programação Orientada a Objetos - POO (PEX0130)
+    Professor: Bruno Borges da Silva
+    
+*/
+
 package listasdeexercicios.lista1; 
 
 import java.util.Scanner;
@@ -10,15 +19,18 @@ public class Lista1java {
 
     Scanner input = new Scanner(System.in);
 
-    System.out.print("Digite a quantidade mínima: ");
-    int quantidade_minima = input.nextInt();
+    int quantidade_minima, quantidademaxima;
+    double estoqueMedio;
 
-    System.out.print("Digite a quantidade máxima: ");
-    int quantidademaxima = input.nextInt();
+    System.out.print("Digite a quantidade mínima da peça: ");
+    quantidade_minima = input.nextInt();
 
-    double estoqueMedio = (quantidade_minima + quantidademaxima) / 2;
+    System.out.print("Digite a quantidade máxima da peça: ");
+    quantidademaxima = input.nextInt();
 
-    System.out.printf("O estoque médio da peça é: %.2f%n", estoqueMedio);
+    estoqueMedio = (quantidade_minima + quantidademaxima) / 2;
+
+    System.out.printf("O estoque médio da peça é: %.1f", estoqueMedio);
 
 }
 
@@ -26,10 +38,10 @@ public class Lista1java {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.printf("Digite a cotação do dólar: ");
+        System.out.print("Digite a cotação do dólar: ");
         double cotacaoDolar = input.nextDouble();
 
-        System.out.printf("Digite o valor em dólares: ");
+        System.out.print("Digite o valor em dólares: ");
         double valorDolar = input.nextDouble();
 
         double valorReal = cotacaoDolar * valorDolar;
@@ -65,13 +77,58 @@ public class Lista1java {
     }
 
     public static void questao4(){
-        // Ler quatro valores numéricos inteiros e apresentar o resultado dois a dois da adição e multiplicação entre os
-        // valores lidos, baseando-se na utilização do conceito de propriedade distributiva. Dica: se forem lidas as variáveis
-        // A, B, C e D, devem ser somados e multiplicados os valores de A com B, A com C e A com D; depois B com C, B com D e
-        // por último C com D. Note que para cada operação serão utilizadas seis combinações. Assim sendo, devem ser
-        // realizadas doze operações de processamento, sendo seis para as adições e seis para as multiplicações.
 
+        Scanner input = new Scanner(System.in);
 
+        int A, B, C, D;
+        int soma1, soma2, soma3, soma4, soma5, soma6;
+        int mult1, mult2, mult3, mult4, mult5, mult6;
+
+        System.out.print("Digite quatro números inteiros:\n");
+        A = input.nextInt();
+        B = input.nextInt();
+        C = input.nextInt();      
+        D = input.nextInt();
+
+        //somas
+
+        soma1 = A + B;
+        soma2 = A + C;
+        soma3 = A + D;
+        soma4 = B + C;
+        soma5 = B + D;
+        soma6 = C + D;
+
+        //multiplicações
+
+        mult1 = A * B;
+        mult2 = A * C;
+        mult3 = A * D;
+        mult4 = B * C;
+        mult5 = B * D;
+        mult6 = C * D;
+
+        System.out.printf("""
+                A ADIÇÃO ENTRE OS NÚMEROS INFORMADOS É: 
+                ----------------------------------------
+                A + B = %d
+                A + C = %d
+                A + D = %d
+                B + C = %d
+                B + D = %d
+                C + D = %d
+                ----------------------------------------
+
+                A MULTIPLICAÇÃO ENTRE OS NÚMEROS INFORMADOS É:
+                ----------------------------------------------
+                A * B = %d
+                A * C = %d 
+                A * D = %d
+                B * C = %d
+                B * D = %d
+                C * D = %d
+                ----------------------------------------------
+                """, soma1, soma2, soma3, soma4, soma5, soma6, mult1, mult2, mult3, mult4, mult5, mult6);
     }
 
     public static void questao5(){
@@ -187,31 +244,44 @@ public class Lista1java {
 
         if (n1 == n2) {
             System.out.println("Os números são iguais.");
-        }
-        if (n1 != n2) {
+        } else {
             System.out.println("Os números não são iguais.");
         }
+
         if (n1 > n2) {
             System.out.println("O primeiro número é maior que o segundo.");
-        }
+        } 
         if (n1 < n2) {
             System.out.println("O primeiro número é menor que o segundo.");
         }
+
         if (n1 >= n2) {
             System.out.println("O primeiro número é maior ou igual ao segundo.");
-        }
+        } 
         if (n1 <= n2) {
             System.out.println("O primeiro número é menor ou igual ao segundo.");
         }
-
     }
 
     //Nível 2: Estruturas Condicionais
 
     public static void Questao1(){
-        // Ler dois valores inteiros para as variáveis A e B, efetuar a troca dos valores de modo que a variável 
-        //A passe a possuir o valor da variável B, e a variável B passe a possuir o valor da variável A. Apresentar 
-        //os valores antes e depois da troca.
+
+        Scanner input = new Scanner(System.in);
+
+        int A, B, temp;
+
+        System.out.print("Digite o valor de A e B\n");
+        A = input.nextInt();
+        B = input.nextInt();
+
+        System.out.printf("Valores antes da troca:\n A = %d\n B = %d\n", A, B);
+
+        temp = A;
+        A = B;
+        B = temp;
+
+        System.out.printf("Valores após a troca:\n A = %d\n B = %d\n", A, B);
 
     }
 
@@ -226,18 +296,117 @@ public class Lista1java {
 
         if(x>=0){
             System.out.printf("O módulo do número é: %d", x);
-        }else if(x<0){
+        }else{
             x = x * (-1);
             System.out.printf("O módulo do número é: %d", x);
         }
     }
 
     public static void Questao3(){
-        // Escreva um programa que leia 5 números inteiros e imprima na tela os valores em ordem crescente e decrescente.
+    
+        Scanner input = new Scanner(System.in);
+
+        int n1, n2, n3, n4, n5, temp;
+
+        System.out.println("Digite cinco números inteiros:");
+        n1 = input.nextInt();
+        n2 = input.nextInt();  
+        n3 = input.nextInt();
+        n4 = input.nextInt();
+        n5 = input.nextInt();
+
+        if (n1 > n2) { 
+            temp = n1; n1 = n2; n2 = temp; 
+        }
+        
+        if (n2 > n3) { 
+            temp = n2; n2 = n3; n3 = temp; 
+        }
+        
+        if (n3 > n4) {
+             temp = n3; n3 = n4; n4 = temp; 
+        }
+        
+        if (n4 > n5) {
+            temp = n4; n4 = n5; n5 = temp; 
+        }
+
+        if (n1 > n2) {
+            temp = n1; n1 = n2; n2 = temp; 
+        }
+        
+        if (n2 > n3) {
+            temp = n2; n2 = n3; n3 = temp;
+        }
+        
+        if (n3 > n4) { 
+            temp = n3; n3 = n4; n4 = temp; 
+        }
+        
+        if (n4 > n5) { 
+            temp = n4; n4 = n5; n5 = temp; 
+        }
+
+        if (n1 > n2) { 
+            temp = n1; n1 = n2; n2 = temp; 
+        }
+        
+        if (n2 > n3) { 
+            temp = n2; n2 = n3; n3 = temp; 
+        }
+        
+        if (n3 > n4) { 
+            temp = n3; n3 = n4; n4 = temp; 
+        }
+        
+        if (n4 > n5) { 
+            temp = n4; n4 = n5; n5 = temp; 
+        }
+
+        if (n1 > n2) {
+            temp = n1; n1 = n2; n2 = temp; 
+        }
+       
+        if (n2 > n3) {
+            temp = n2; n2 = n3; n3 = temp; 
+        }
+        
+        if (n3 > n4) { 
+            temp = n3; n3 = n4; n4 = temp; 
+        }
+        
+        if (n4 > n5) { 
+            temp = n4; n4 = n5; n5 = temp; 
+        }
+
+        //ordem crescente
+        System.out.printf("Ordem crescente: %d %d %d %d %d\n", n1, n2, n3, n4, n5);
+
+        //ordem decrescente
+        System.out.printf("Ordem decrescente: %d %d %d %d %d", n5, n4, n3, n2, n1);
+
     }
 
     public static void Questao4(){
-        // Escreva um programa que leia dois números e apresente a diferença do maior para o menor.
+
+        Scanner input = new Scanner(System.in);
+
+        int n1, n2, diferenca;
+
+        System.out.println("Digite dois números inteiros:");
+        n1 = input.nextInt();
+        n2 = input.nextInt();
+
+        if(n1>n2){
+            diferenca = n1 - n2;
+            System.out.printf("A diferença do maior para o menor é: %d", diferenca);
+        }
+        else if(n2>n1){
+            diferenca = n2 - n1;
+            System.out.printf("A diferença do maior para o menor é: %d", diferenca);
+        }else{
+            System.out.println("Os números são iguais.");
+        }
     }
 
     public static void Questao5(){
@@ -259,8 +428,8 @@ public class Lista1java {
             System.out.printf("Aluno aprovado com média: %.1f", mediaEscolar);
         }else if (mediaEscolar < 7) {
             System.out.printf("Média do aluno: %.1f. Digite a nota da recuperação: ", mediaEscolar);
-
             notaRec = input.nextDouble();
+            
             novaMedia = (mediaEscolar + notaRec) / 2;
              
             if(novaMedia>=7){
@@ -272,22 +441,69 @@ public class Lista1java {
     }
 
     public static void Questao6(){
-        // Escreva um programa que leia dois números e exiba mensagem informando 
-        //o valor do maior número e o valor do menor número. Se os dois números forem iguais, o programa deve exibir mensagem informando este fato.
+        
+        Scanner input = new Scanner(System.in);
+
+        int n1, n2, maior, menor;
+
+        System.out.println("Digite dois números inteiros:");
+        n1 = input.nextInt();
+        n2 = input.nextInt();   
+
+        if(n1>n2){
+            maior = n1;
+            menor = n2;
+            System.out.printf("O maior número é: %d\nO menor número é: %d", maior, menor);
+        }else if(n2>n1){
+            maior = n2;
+            menor = n1;
+            System.out.printf("O maior número é: %d\nO menor número é: %d", maior, menor);
+        }else{
+            System.out.println("Os números são iguais.");
+        }
     }
 
     public static void Questao7(){
-        // Escreva um programa que leia um número inteiro. Verificar por meio de condição se o valor fornecido está na faixa entre 0 (zero) e 9 (nove). 
-        //Caso o valor fornecido esteja dentro da faixa, apresentar a mensagem “valor válido”. Caso contrário, apresentar a mensagem “valor inválido”, 
-        //em qualquer outro caso, informe "erro".
 
+        Scanner input = new Scanner(System.in);
 
+        int n;
+
+        System.out.print("Digite um número inteiro: ");
+        n = input.nextInt();
+
+        if(n>=0 && n<=9){
+            System.out.println("Valor válido.");
+        }else if (n<0 || n>9){
+            System.out.println("Valor inválido.");
+        }else{
+            System.out.println("Erro.");
+        }
     }
 
     public static void Questao8(){
-        // Escreva um programa que leia um número inteiro (variável CÓDIGO). Verificar se o código é igual a 1, igual a 2 ou igual a 3. 
-        //Caso não seja, apresentar a mensagem “Código inválido”. Ao ser verificado o código e constatado que é um valor válido, o programa deve verificar 
-        //cada código em separado para determinar seu valor por extenso, ou seja, apresentar a mensagem “um”, ”dois” ou “três”. (Utilizar o comando Switch).
+        
+        Scanner input = new Scanner(System.in);
+
+        int codigo;
+
+        System.out.print("Digite um número inteiro (1, 2 ou 3): ");
+        codigo = input.nextInt();
+
+       switch (codigo){
+            case 1:
+                System.out.println("Um");
+                break;
+            case 2: 
+                System.out.println("Dois");
+                break;
+            case 3:
+                System.out.println("Três");
+                break;
+            default:
+                System.out.println("Código inválido.");
+                break;
+       }
     }
 
     public static void Questao9(){
@@ -317,12 +533,59 @@ public class Lista1java {
     }
 
     public static void Questao10(){
-        // Escrever um programa declarando três variáveis do tipo inteiro (a, b e c). 
-        //Ler um valor maior que zero para cada variável (se o valor digitado não é válido, mostrar mensagem e ler novamente).
-        // Exibe o menor valor lido multiplicado pelo maior e o maior valor dividido pelo menor.
+        
+        Scanner input = new Scanner(System.in);
 
+        int a, b, c;
 
+        System.out.print("Digite um valor maior que zero para A: ");
+        a = input.nextInt();
 
+        if(a<=0){
+            System.out.println("Valor inválido. Digite novamente um valor maior que zero para A.");
+            a = input.nextInt();
+        }
+
+        System.out.print("Digite um valor maior que zero para B: ");
+        b = input.nextInt();
+
+        if(b<=0){
+            System.out.println("Valor inválido. Digite novamente um valor maior que zero para B.");
+            b = input.nextInt();
+        }
+
+        System.out.print("Digite um valor maior que zero para C: ");
+        c = input.nextInt();
+
+        if(c<=0){
+            System.out.println("Valor inválido. Digite novamente um valor maior que zero para C.");
+            c = input.nextInt();
+        }
+
+        int maior = a;
+        int menor = a;
+
+        if(b>maior){
+            maior = b;
+        }
+
+        if(c>maior){
+            maior = c;
+        }
+
+        if(b<menor){
+            menor = b;
+        }
+
+        if(c<menor){
+            menor = c;
+        }
+
+        int mult = menor * maior;
+        double div = (double) maior / menor;
+
+        System.out.printf("O menor valor lido multiplicado pelo maior é: %d\n", mult);
+        System.out.printf("O maior valor lido dividido pelo menor é: %.1f", div);
     }
 
     public static void Questao11(){
@@ -345,21 +608,47 @@ public class Lista1java {
 
         Scanner input = new Scanner(System.in);
 
-        int n;
+        int n, A = 0, B = 0;
 
         System.out.print("Digite um número: ");
         n = input.nextInt();
 
         if(n>=0){
-            int A = n;
-            System.out.printf("O número %d foi armazenado em A.", A);
+            A = n;
         }else{
-            int B = n;
-            System.out.printf("O número %d foi armazenado em B.", B);
+            B = n;
         }
+        System.out.printf("Valor armazenado em A: %d, Valor armazenado em B: %d%n", A, B);
     }
 
     public static void main(String[] args) {
-        Questao12();
+        // Questões Nível 1: Entrada, Processamento e Saída
+
+        //questao1();
+        //questao2();
+        //questao3();
+        //questao4();
+        //questao5();
+        //questao6();
+        //questao7();
+        //questao8();
+        //questao9();
+        //questao10();
+
+        //Questões Nível 2: Estruturas Condicionais
+
+        //Questao1();
+        //Questao2();
+        //Questao3();
+        //Questao4();
+        //Questao5();
+        //Questao6();
+        //Questao7();
+        //Questao8();
+        //Questao9();
+        //Questao10();
+        //Questao11();
+        //Questao12();
+
     }
 }
