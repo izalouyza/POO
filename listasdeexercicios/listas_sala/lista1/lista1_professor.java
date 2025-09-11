@@ -2,7 +2,7 @@ package listasdeexercicios.listas_sala.lista1;
 
 import java.util.Scanner;
 
-public class listas_sala {
+public class lista1_professor {
     public static void questao1() {
         Scanner input = new Scanner(System.in);
         int anos, meses, dias, diasTotais;
