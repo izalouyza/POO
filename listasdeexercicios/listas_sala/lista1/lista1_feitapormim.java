@@ -79,7 +79,7 @@ public class lista1_feitapormim {
         Scanner input = new Scanner(System.in);
 
         int porcentagem, codPeca1, valorUnit1, qtdPeca1;
-        int codPeca2, valorUnit2, qtdPeca2;
+        int codPeca2, valorUnit2, qtdPeca2, valorTotal;
 
         System.out.print("Digite a porcentagem do IPI: ");
         porcentagem = input.nextInt();
@@ -90,7 +90,7 @@ public class lista1_feitapormim {
         System.out.print("Digite o valor unitário da peça 1: ");
         valorUnit1 = input.nextInt();
 
-        System.out.print("Digite a quantidade de peças 2: ");
+        System.out.print("Digite a quantidade de peças 1: ");
         qtdPeca1 = input.nextInt();
 
         System.out.print("Digite o código da peça 2: ");
@@ -99,11 +99,47 @@ public class lista1_feitapormim {
         System.out.print("Digite o valor unitário da peça 2: ");
         valorUnit2 = input.nextInt();
 
-        System.out.print("");
+        System.out.print("Digite a quantidade de peças 2: ");
+        qtdPeca2 = input.nextInt();
+
+        valorTotal = (valorUnit1 * qtdPeca1 + valorUnit2 * qtdPeca2) * (porcentagem/100 + 1);
+
+        System.out.printf("Valor total a ser pago: %d", valorTotal);
 
      }
 
+     public static void questao5(){
+        /*Crie um algoritmo que leia o valor do salário mínimo e o valor do salário de um usuário,
+        calcule a quantidade de salários mínimos esse usuário ganha e imprima o resultado. (1SM=R$788,00)*/
+
+         Scanner input = new Scanner(System.in);
+
+         System.out.print("Informe o valor do salário mínimo: ");
+         double salarioMin = input.nextDouble();
+
+         System.out.print("Digite o valor do salário do usuário: ");
+         double salarioUsuario = input.nextDouble();
+
+         double qtdSalariosMin = salarioUsuario / 788;
+
+         System.out.printf("O usuário ganha %.1f salário(s) mínimo(s).", qtdSalariosMin);
+     }
+
+     public static void questao6(){
+        //Desenvolva um algoritmo em Java que leia um número inteiro e imprima o seu antecessor e seu sucessor.
+
+         Scanner input = new Scanner(System.in);
+
+         System.out.print("Digite um número inteiro: ");
+         int n = input.nextInt();
+
+         int ant =  n - 1;
+         int suc = n + 1;
+
+         System.out.printf("O antecessor de %d é %d e o sucessor de %d é %d.", ant, n, n, suc);
+     }
+
     public static void main(String[] args) {
-        questao3();
+        questao6();
     }
 }
