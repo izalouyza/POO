@@ -1,8 +1,6 @@
-package codigos.aula3;
+package aula4;
 
 import java.util.Scanner;
-
-import codigos.aula3.utilitarios;
 
 public class main {
     public static void main(String[] args) {

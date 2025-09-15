@@ -1,4 +1,4 @@
-package aula1;
+package aula2;
 import java.util.Scanner;
 
 public class explorando {

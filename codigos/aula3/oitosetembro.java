@@ -1,4 +1,4 @@
-package codigos.aula2;
+package aula3;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -95,7 +95,6 @@ public class oitosetembro {
                 switch (opcao){
                     case 1:
                         System.out.println("Soma: ");
-                        System.out.printf("\n%d + %d = %d\n", n1, n2, (n1+n2);
 
                         break;
                     case 2:
