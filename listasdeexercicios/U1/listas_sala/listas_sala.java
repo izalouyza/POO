@@ -1,8 +1,8 @@
-package listasdeexercicios.listas_sala.lista1;
+package listasdeexercicios.U1.listas_sala;
 
 import java.util.Scanner;
 
-public class lista1_professor {
+public class listas_sala {
     public static void questao1() {
         Scanner input = new Scanner(System.in);
         int anos, meses, dias, diasTotais;

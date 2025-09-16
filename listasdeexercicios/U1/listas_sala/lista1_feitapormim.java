@@ -1,4 +1,4 @@
-package listasdeexercicios.listas_sala.lista1;
+package listasdeexercicios.U1.listas_sala;
 
 import java.util.Scanner;
 
