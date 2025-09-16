@@ -1,0 +1,56 @@
+# =====================================
+# IntelliJ IDEA
+# =====================================
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# =====================================
+# Compilação Java
+# =====================================
+*.class
+
+# Diretórios de saída
+out/
+target/
+bin/
+
+# =====================================
+# Logs e temporários
+# =====================================
+*.log
+*.tmp
+*.swp
+
+# =====================================
+# Arquivos do sistema (Windows / macOS / Linux)
+# =====================================
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Linux
+*~
+
+# =====================================
+# Arquivos de build (caso use Maven/Gradle)
+# =====================================
+# Maven
+.mvn/
+.settings/
+dependency-reduced-pom.xml
+
+# Gradle
+.gradle/
+build/
+
+# =====================================
+# Outros
+# =====================================
+# Arquivos de cache
+*.cache
