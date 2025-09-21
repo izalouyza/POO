@@ -1,6 +1,6 @@
 # 🖥️ Programação Orientada a Objetos
 
-Repositório dedicado às atividades da disciplina **Programação Orientada a Objetos** (PEX0130), ministrada pelo professor Bruno Borges da Silva.
+Repositório dedicado às atividades da disciplina **Programação Orientada a Objetos** (PEX0130), ministrada pelo professor [Bruno Borges da Silva](https://github.com/silv4bufersa).
 
 O objetivo deste repositório é organizar e manter os códigos desenvolvidos em sala de aula, exercícios práticos e exemplos relacionados aos conceitos de POO.
 
