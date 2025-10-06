@@ -1,7 +1,7 @@
-package aula2;
+package codigos.U1.aula2;
 import java.util.Scanner;
 
-public class explorando {
+public class SwitchExamples {
     public static void print(String str){
         System.out.print(str);
     }

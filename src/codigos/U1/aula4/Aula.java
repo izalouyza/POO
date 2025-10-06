@@ -1,6 +1,6 @@
-package aula4;
+package codigos.U1.aula4;
 
-public class aula {
+public class Aula {
     public static void exibeMensagem() {
         System.out.println("Mensagem");
     }

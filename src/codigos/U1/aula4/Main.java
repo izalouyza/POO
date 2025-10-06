@@ -1,11 +1,9 @@
-package U1.aula4;
-
-import U1.aula4.utilitarios;
+package codigos.U1.aula4;
 
 public class Main {
     public static void main(String[] args) {
-        utilitarios utils = new utilitarios();
-        utilitariosCalc calc = new utilitariosCalc();
+        Utilitarios utils = new Utilitarios();
+        UtilitariosCalc calc = new UtilitariosCalc();
 
         utils.println("Calculadora");
 

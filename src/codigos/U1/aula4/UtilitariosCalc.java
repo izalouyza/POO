@@ -1,9 +1,9 @@
-package aula4;
+package codigos.U1.aula4;
 
 import java.util.Scanner;
 
-public class utilitariosCalc {
-    utilitarios utils = new utilitarios();
+public class UtilitariosCalc {
+    Utilitarios utils = new Utilitarios();
 
     public int soma(int n1, int n2) {
         return n1 + n2;

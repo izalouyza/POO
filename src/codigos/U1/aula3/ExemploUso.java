@@ -1,10 +1,10 @@
-package aula3;
+package codigos.U1.aula3;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class oitosetembro {
+public class ExemploUso {
     public static void exemploArray(){
 
         String[] cores = new String[5];

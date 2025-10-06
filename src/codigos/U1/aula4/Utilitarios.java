@@ -1,6 +1,6 @@
-package aula4;
+package codigos.U1.aula4;
 
-public class utilitarios {
+public class Utilitarios {
     public void print(String mensagem) {
         System.out.print(mensagem);
     }

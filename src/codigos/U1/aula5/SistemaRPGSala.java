@@ -1,4 +1,4 @@
-package aula5;
+package codigos.U1.aula5;
 
 import java.util.Scanner;
 
