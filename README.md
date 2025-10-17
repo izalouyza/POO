@@ -11,7 +11,7 @@ O objetivo deste repositório é organizar e manter os códigos desenvolvidos em
 
 ## 📚 Conteúdo do Repositório
 
-- [Atividades de Sala](https://github.com/izalouyza/POO/tree/main/listasdeexercicios/listas_sala): exercícios resolvidos durante as aulas, com foco em implementação prática de conceitos.  
+- [Atividades de Sala](https://github.com/izalouyza/POO/tree/main/listasdeexercicios/Listas_sala): exercícios resolvidos durante as aulas, com foco em implementação prática de conceitos.  
 - [Exercícios](https://github.com/izalouyza/POO/tree/main/listasdeexercicios): listas de exercícios e projetos propostos pelo professor.  
 - [Exemplos](https://github.com/izalouyza/POO/tree/main/codigos): demonstrações de conceitos de POO.
 
