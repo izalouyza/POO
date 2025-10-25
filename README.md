@@ -9,20 +9,15 @@ O objetivo deste repositório é organizar e manter os códigos desenvolvidos em
 
 ---
 
-## 📚 Conteúdo do Repositório
-
-- [Exercícios](https://github.com/izalouyza/POO/tree/main/src/codigos): listas de exercícios e projetos propostos pelo professor.  
-- [Exemplos](https://github.com/izalouyza/POO/tree/main/src/listasdeexercicios): demonstrações de conceitos de POO.
-
-
-
 ## 📂 Estrutura de Pastas
 
 ```
 POO/
-├── codigos/              # Códigos feitos em sala de aula e demonstrações de conceitos de POO
-├── listasdeexercicios/   # Listas e exercícios propostos          
-└── README.md             # Descrição do repositório
+src
+├── estudos_prova/              # Códigos de estudo para as avaliações
+├── exemplos_codigo/            # Códigos feitos em sala de aula e demonstrações de conceitos de POO
+├── exercicios/                 # Listas e exercícios propostos          
+└── README.md                   # Descrição do repositório
 ```
 
 ## ⚙️ Tecnologias Utilizadas
