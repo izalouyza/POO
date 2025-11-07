@@ -4,8 +4,10 @@ Repositório dedicado às atividades da disciplina **Programação Orientada a O
 
 O objetivo deste repositório é organizar e manter os códigos desenvolvidos em sala de aula, exercícios práticos e exemplos relacionados aos conceitos de POO.
 
-![Linguagem](https://img.shields.io/badge/linguagem-Java-red)
-![Último commit](https://img.shields.io/github/last-commit/izalouyza/POO)
+![Linguagem](https://img.shields.io/badge/Linguagem-Java-red)
+![Ambiente](https://img.shields.io/badge/Ambiente_de_Desenvolvimento-IntelliJ_IDEA-blue)
+![Last Commit / Último_Commit](https://img.shields.io/github/last-commit/izalouyza/POO)
+
 
 ---
 
@@ -20,12 +22,12 @@ src
 └── README.md                   # Descrição do repositório
 ```
 
-## ⚙️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Linguagem:** Java
 - **Paradigma:** Programação Orientada a Objetos
 
-## 📝 Observações
+## Observações
 
 - Todos os códigos têm fins acadêmicos e educativos.
 
