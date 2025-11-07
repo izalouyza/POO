@@ -1,0 +1,8 @@
+package DesafiosProgressao.DispositivosMidia;
+
+public class CaixaDeSom implements ReprodutorAudio {
+    @Override
+    public void tocarMusica(String faixa){
+        System.out.println("Tocando música: " + faixa);
+    }
+}
