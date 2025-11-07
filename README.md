@@ -22,14 +22,23 @@ src
 └── README.md                   # Descrição do repositório
 ```
 
+## Conteúdos 
+
+- **Classes e Objetos** — estrutura básica da POO;
+- **Abstração e Encapsulamento** — ocultação de detalhes e proteção de dados;  
+- **Herança** — reuso de código e especialização de classes;  
+- **Polimorfismo** — comportamento dinâmico de objetos;  
+- **Interfaces e Classes Abstratas** — contratos e padronização de métodos.
+  
 ## Tecnologias Utilizadas
 
-- **Linguagem:** Java
-- **Paradigma:** Programação Orientada a Objetos
+- **Linguagem:** Java;
+- **Paradigma:** Programação Orientada a Objetos.
 
 ## Observações
 
-- Todos os códigos têm fins acadêmicos e educativos.
+- Todos os códigos têm fins acadêmicos e educativos;
+- O conteúdo foi desenvolvido para fins de **estudo e prática da disciplina de POO**. 
 
 
 
